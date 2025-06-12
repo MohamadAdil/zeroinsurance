@@ -386,3 +386,197 @@ figure {
   max-width: 852px;
   margin: 0 auto;
 }
+
+/*  */
+
+.sc-testimonial {
+  padding: 100px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background: var(--light-bg);
+}
+
+.sc-testimonial h2 {
+  font: 600 44px/1.2 var(--font-family-p);
+  margin-bottom: 40px;
+  color: var(--deep-black);
+  text-align: center;
+}
+
+.testimonial-swiper .swiper-button-next,
+.testimonial-swiper .swiper-button-prev {
+  display: none;
+}
+
+.testimonial-swiper .swiper-pagination {
+  position: unset !important;
+  margin-top: 30px;
+}
+
+.testimonial-swiper .swiper-pagination-bullet {
+  width: 8px;
+  height: 8px;
+  background: #CCCCCC;
+  border-radius: 50%;
+}
+
+.testimonial-swiper .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 24px;
+  border-radius: 7px;
+  background-color: var(--primary-blue);
+}
+
+.testimonial-card {
+  border: 1px solid #E0E6F7;
+  padding: 26px;
+  border-radius: 16px;
+  background-color: var(--white);
+}
+
+.testimonial-card p {
+  font: 600 14px/1.6 var(--font-family-p);
+  color: var(--gray-text);
+  margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.testimonial-card a {
+  font: 600 14px/1 var(--font-family-p);
+  color: var(--primary-blue);
+}
+
+.user-dt {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 14px;
+}
+
+.user-dt-ing img {
+  width: 81px;
+  height: 81px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.user-dt-text h6 {
+  font: 600 16px/1.2 var(--font-family-p);
+  color: var(--black);
+  margin-bottom: 8px;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.rating i {
+  font-size: 14px;
+  color: #FFCA40;
+}
+
+/*  */
+
+.sc-accordion {
+  padding: 100px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sc-accordion h2 {
+  font: 600 44px/1.2 var(--font-family-p);
+  margin-bottom: 40px;
+  color: var(--deep-black);
+}
+
+.accordion-wrap {
+  background-color: var(--light-bg);
+  border-radius: 64px;
+  padding: 50px;
+}
+
+.sc-accordion .accordion {
+  margin-bottom: 30px;
+}
+
+.sc-accordion .accordion-item {
+  margin-bottom: 24px;
+  border-radius: 32px;
+  padding: 34px;
+  background-color: var(--white);
+}
+
+.sc-accordion .accordion-item h2 {
+  margin: 0;
+}
+
+.sc-accordion .accordion-body {
+  padding: 0;
+  margin-top: 36px;
+}
+
+.sc-accordion .accordion-item button {
+  font: 600 24px/1.2 var(--font-family-p);
+  color: var(--black);
+  background-color: unset;
+  border: unset;
+  border-radius: 0;
+  box-shadow: none;
+  outline: none;
+  padding: 0;
+}
+
+.sc-accordion .accordion-item button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.sc-accordion .accordion-body p {
+  font: 400 16px/1.6 var(--font-family-p);
+  color: var(--gray-text);
+  margin: 0;
+}
+
+
+.sc-accordion .accordion-item:last-child {
+  margin-bottom: 0;
+}
+
+.accordion-button::after {
+  display: none;
+}
+
+.accordion-button {
+  position: relative;
+
+}
+
+.accordion-button::before {
+  content: '\f067';
+  font-family: 'Font Awesome 6 Free';
+  font-weight: 900;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: var(--white);
+  width: 48px;
+  background-color: #CCCCCC;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.accordion-button:not(.collapsed)::before {
+  content: '\f068';
+  background-color: var(--success-green);
+}
