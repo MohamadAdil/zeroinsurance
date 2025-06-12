@@ -621,6 +621,9 @@ figure {
   color: var(--white);
 }
 
+.uppet-ft ul li a:hover {
+  color: var(--success-green);
+}
 
 .socail-links-ft {
   display: flex;
