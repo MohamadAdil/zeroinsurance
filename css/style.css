@@ -1,0 +1,284 @@
+:root {
+  --black: #000;
+  --white: #fff;
+  --font-family-p: "Manrope", sans-serif;
+
+  --dark-gray: #101010;
+  --primary-blue: #051A6F;
+  --success-green: #2B8F1C;
+  --deep-black: #111111;
+  --light-bg: #F8F8F9;
+  --light-gray: #F6F7F8;
+  --light-green: #E6FFE2;
+  --gray-text: #666666;
+  --navy-blue: #132B8E;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: inherit;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Media & Images */
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Forms */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.4s ease-in-out;
+}
+
+a:hover {
+  text-decoration: none;
+  transition: all 0.6s ease-in-out;
+}
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+/*  */
+.container {
+  max-width: 1296px !important;
+}
+
+.btn-main {
+  display: inline-block;
+  border-radius: 8px;
+  padding: 17px 33px;
+  background: var(--primary-blue);
+  font: 600 16px/1 "Manrope";
+  letter-spacing: 0;
+  color: var(--white);
+  transition: all ease 0.5s;
+  border: 1px solid var(--primary-blue);
+}
+
+.btn-main:hover {
+  background: var(--white);
+  border: 1px solid var(--primary-blue);
+  color: var(--primary-blue);
+}
+
+/* Header */
+.navbar-brand img {
+  max-width: 186px;
+  object-fit: contain;
+}
+
+.top-header {
+  background: var(--dark-gray);
+  padding: 24px 0;
+}
+
+.top-header-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.contact-link,
+.socail-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.contact-link li a i {
+  margin-right: 8px;
+}
+
+.contact-link li a,
+.socail-links li a {
+  color: var(--white);
+}
+
+.contact-link li a {
+  font: 500 14px/1.1 var(--font-family-p);
+}
+
+.contact-link li a:hover,
+.socail-links li a:hover {
+  color: var(--success-green);
+}
+
+.site-header .navbar-nav {
+  gap: 36px;
+}
+
+.site-header .navbar-nav li a {
+  margin: 0 !important;
+  padding: 0 !important;
+  font: 600 16px/1 var(--font-family-p);
+}
+
+
+.site-header .navbar-nav li a.active,
+.site-header .navbar-nav li a:hover {
+  color: var(--primary-blue);
+}
+
+/*  */
+.hero-banner {
+  padding: 120px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--light-green);
+}
+
+.hero-banner h1 {
+  font-family: var(--font-family-p);
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 1.2;
+  text-transform: capitalize;
+  margin: 0 0 16px;
+  max-width: 461px;
+
+}
+
+.hero-banner p {
+  font: 500 18px/1.6 var(--font-family-p);
+  color: var(--gray-text);
+  margin-bottom: 24px;
+}
+
+
+.green-clr {
+  color: var(--success-green);
+}
+
+.blue-clr {
+  color: var(--primary-blue);
+}
+
+.hero-banner .row {
+  align-items: center;
+}
+
+.hero-banner .img-wrap img {
+  height: 480px;
+  object-fit: cover;
+  border-radius: 20px;
+
+}
+
+/*  */
+.sc-health-ins {
+  background-color: var(--light-bg);
+  padding: 100px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.sc-health-ins .text-wrap {
+  max-width: 972px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.sc-health-ins .text-wrap h2 {
+  font: 600 44px/1.2 var(--font-family-p);
+  margin-bottom: 16px;
+  color: var(--deep-black);
+}
+
+.sc-health-ins .text-wrap p {
+  font: 400 16px/1.6 var(--font-family-p);
+  color: var(--gray-text);
+}
+
+.sc-health-card {
+  background-color: var(--white);
+  border-radius: 12px;
+  padding: 28px 50px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  height: 100%;
+}
+
+.sc-health-card-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #E1F1E5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sc-health-card-img img {
+  max-width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.sc-health-card-text h4 {
+  font: 600 28px/1.2 var(--font-family-p);
+  color: var(--primary-blue);
+  margin-bottom: 6px;
+}
+
+.sc-health-card-text p {
+  font: 500 15px/1.6 var(--font-family-p);
+  color: var(--gray-text);
+}
