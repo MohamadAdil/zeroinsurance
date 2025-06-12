@@ -212,6 +212,8 @@ figure {
   align-items: center;
 }
 
+
+
 .hero-banner .img-wrap img {
   height: 480px;
   object-fit: cover;
@@ -264,6 +266,7 @@ figure {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex: none;
 }
 
 .sc-health-card-img img {
@@ -281,4 +284,105 @@ figure {
 .sc-health-card-text p {
   font: 500 15px/1.6 var(--font-family-p);
   color: var(--gray-text);
+}
+
+/*  */
+.sc-howworks {
+  padding: 100px 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.sc-howworks h2 {
+  font: 600 44px/1.2 var(--font-family-p);
+  margin-bottom: 40px;
+  color: var(--deep-black);
+  text-align: center;
+}
+
+/*  */
+.work-card {
+  padding: 48px 50px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  background-color: var(--light-green);
+  height: 100%;
+}
+
+.word-card-icon {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background-color: var(--success-green);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 600 32px/1 var(--font-family-p);
+  color: var(--white);
+}
+
+.word-card-icon::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  width: 74px;
+  height: 74px;
+  border: 2px dashed var(--success-green);
+  border-radius: 50%;
+  background: transparent;
+}
+
+.word-card-text {
+  text-align: center;
+}
+
+.word-card-text h4 {
+  font: 600 26px/1.2 var(--font-family-p);
+  margin-bottom: 12px;
+  text-align: center;
+}
+
+.word-card-text p {
+  font: 400 16px/1.6 var(--font-family-p);
+  margin-bottom: 22px;
+  text-align: center;
+}
+
+.word-card-text a {
+  font: 600 18px/1.1 var(--font-family-p);
+  color: var(--primary-blue);
+  text-align: center;
+  text-decoration: underline;
+}
+
+#work-card-1 {
+  background: var(--light-bg) url('../images/background-img.png') center/cover no-repeat;
+
+}
+
+#work-card-2 {
+  background: var(--light-gray);
+}
+
+#work-card-2 a {
+  color: var(--dark-gray);
+}
+
+.sc-howworks-btm-card {
+  background: var(--primary-blue);
+  padding: 18px 59px;
+  font: 500 18px/1.2 var(--font-family-p);
+  color: var(--white);
+  border-radius: 70px;
+  max-width: 852px;
+  margin: 0 auto;
 }
