@@ -385,6 +385,7 @@ figure {
   border-radius: 70px;
   max-width: 852px;
   margin: 0 auto;
+  text-align: center;
 }
 
 /*  */
@@ -529,7 +530,7 @@ figure {
   border-radius: 0;
   box-shadow: none;
   outline: none;
-  padding: 0;
+  padding: 0 30px 0 0;
 }
 
 .sc-accordion .accordion-item button:focus {
@@ -674,7 +675,7 @@ figure {
   width: 53px;
   height: 53px;
   border-radius: 50%;
-
+  flex: none;
   background: #132B8E;
   display: flex;
   align-items: center;
@@ -697,4 +698,10 @@ figure {
   font: 500 18px/1 var(--font-family-p);
   text-transform: capitalize;
   color: var(--white);
+}
+
+.site-header .navbar-toggler {
+  border: 0;
+  box-shadow: none !important;
+  outline: 0 !important;
 }

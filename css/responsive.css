@@ -1,23 +1,137 @@
-/* 
-.hero-banner .row>div {
-  margin-bottom: 20px;
+@media only screen and (max-width: 1024px) {
+  .sc-health-card {
+    padding: 20px;
+  }
+
+  .accordion-button::before {
+    width: 30px;
+    height: 30px;
+  }
+
+  .contact-item {
+    gap: 10px;
+  }
+  .site-header .navbar-nav{
+    gap: 20px;
+  }
+  .contact-item a{
+    font-size: 14px;
+  }
 }
 
-.hero-banner .row>div:last-child {
-  margin: 0;
-}
-.sc-health-ins .row>div {
-  margin-bottom: 20px;
+@media only screen and (max-width: 991px) {
+
+  .hero-banner,
+  .sc-health-ins,
+  .sc-howworks,
+  .sc-testimonial,
+  .sc-accordion {
+    padding: 60px 0;
+  }
+
+  .btn-main {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
 
-.sc-health-ins .row>div:last-child {
-  margin: 0;
-} 
+@media only screen and (max-width: 767px) {
+  .site-header .navbar-nav {
+    gap: 20px;
+  }
+
+  .navbar-collapse {
+    margin: 20px 0;
+  }
+
+  .navbar-collapse .button-wrap {
+    display: none;
+  }
+
+  .hero-banner .row>div {
+    margin-bottom: 20px;
+  }
+
+  .hero-banner .row>div:last-child {
+    margin: 0;
+  }
+
+  .sc-health-ins .row>div {
+    margin-bottom: 20px;
+  }
+
+  .sc-health-ins .row>div:last-child {
+    margin: 0;
+  }
+
   .sc-howworks .row>div {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+  }
+
+  .sc-howworks .row>div:last-child {
+    margin: 0;
+  }
+
+  .hero-banner h1 {
+    max-width: 100%;
+    font-size: 35px;
+  }
+
+  .hero-banner p {
+    font-size: 16px;
+  }
+
+  .sc-health-ins .text-wrap h2,
+  .sc-howworks h2,
+  .sc-testimonial h2,
+  .sc-accordion h2 {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+
+  .accordion-wrap {
+    padding: 30px;
+    border-radius: 20px;
+  }
+
+  .sc-accordion .accordion-item {
+    border-radius: 20px;
+    padding: 20px;
+  }
+
+  .sc-accordion .accordion-body {
+    margin-top: 20px;
+  }
+
+  .sc-accordion .accordion-item button {
+    font-size: 18px;
+  }
+
+  .sc-health-card-text h4,
+  .word-card-text h4 {
+    font-size: 18px;
+  }
+
+  .work-card {
+    padding: 30px;
+  }
+
+  .sc-howworks-btm-card {
+    font-size: 14px;
+    padding: 20px;
+  }
 }
 
-.sc-howworks .row>div:last-child {
-  margin: 0;
+@media only screen and (max-width: 575px) {
+  .top-header {
+    display: none;
+  }
+
+  .hero-banner h1 {
+    font-size: 25px;
+  }
+
+  .hero-banner .img-wrap img {
+    height: 250px;
+  }
 }
- */
